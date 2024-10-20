@@ -1,0 +1,49 @@
+# Windows Theme For Grub
+# Made By :- Vivek_Rajan
+# Repository :- https://github.com/MrVivekRajan/Grub-Themes
+
+
+# BACKGROUND-IMAGE
+title-text: ""
+desktop-image: "Grub.png"
+
+
+# TERMINAL
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-font: "Hack Bold 18"
+
+
+# GRUB-MENU-ENTRIES 
++ boot_menu {
+	left = 11%
+	top = 380
+	width = 650
+	height = 100%
+	item_font = "Roboto-Regular-25"
+        selected_item_font = "Roboto-Regular-27"
+	item_color = "#ffffff"
+        item_padding = 5
+        item_height = 28
+        item_spacing = 70
+        selected_item_pixmap_style = "select_*.png"
+
+
+# GRUB-MENU-ICONS
+        icon_width = 28
+        icon_height = 28
+        item_icon_space = 24
+	scrollbar = true
+}
+
+
+# TIMEOUT
++ label {
+	id = "__timeout__"
+	left = 11%+5
+        top = 25%
+	text = "Booting into os in %d Seconds"
+	align = "center"
+	font = "Roboto-Regular-22"
+	color = "#ffffff"
+}
