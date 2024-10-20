@@ -1,4 +1,4 @@
-# Grub Theme Previews
+# Grub Theme Update
 
 ![Stars](https://img.shields.io/github/stars/0xRad1ant/Grub-Themes?style=social)
 ![Last Commit](https://img.shields.io/github/last-commit/0xRad1ant/Grub-Themes)
