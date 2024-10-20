@@ -16,9 +16,9 @@ jobs:
 
       - name: Generate README
         run: |
-          # Add the initial documentation and badges
+          # Create README.md with the correct structure
           {
-            echo "# Grub Theme Previews"
+            echo "# Grub Theme Update"
             echo ""
             echo "![Stars](https://img.shields.io/github/stars/0xRad1ant/Grub-Themes?style=social)"
             echo "![Last Commit](https://img.shields.io/github/last-commit/0xRad1ant/Grub-Themes)"
