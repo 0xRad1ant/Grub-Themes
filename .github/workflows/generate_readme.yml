@@ -16,16 +16,67 @@ jobs:
 
       - name: Generate README
         run: |
-          echo "# Grub Theme Previews" > README.md
-          echo "" >> README.md
-          for file in Preview/*.{png,jpg}; do
-            theme_name=$(basename "$file" | sed 's/\.[^.]*$//')
-            echo "## $theme_name" >> README.md
-            echo "![$theme_name](./$file)" >> README.md
-            echo "" >> README.md
-          done
+          # Add the initial documentation and badges
+          {
+            echo "# Grub Theme Previews"
+            echo ""
+            echo "![Stars](https://img.shields.io/github/stars/0xRad1ant/Grub-Themes?style=social)"
+            echo "![Last Commit](https://img.shields.io/github/last-commit/0xRad1ant/Grub-Themes)"
+            echo "![Issues](https://img.shields.io/github/issues/0xRad1ant/Grub-Themes)"
+            echo "![License](https://img.shields.io/github/license/0xRad1ant/Grub-Themes)"
+            echo ""
+            echo "Welcome to the collection of Grub themes with previews of each one. Each theme can be installed and applied automatically via the provided script."
+            echo ""
+            echo "## Available Themes"
+            echo "Below are previews of the available themes:"
+            echo ""
+            # List available themes
+            echo "- Aesthetic"
+            echo "- Anime"
+            echo "- CartoonGirl"
+            echo "- Cyberpunk"
+            echo "- CyberRe"
+            echo "- Elegant-Mountain"
+            echo "- fallout"
+            echo "- NeonPurple"
+            echo "- SekiroShadow"
+            echo "- Windows-Main"
+            echo "- Wuthering-changli"
+            echo ""
+            echo "## Installation"
+            echo ""
+            echo "### Step 1: Clone the Repository"
+            echo "```bash"
+            echo "git clone https://github.com/0xRad1ant/Grub-Themes.git"
+            echo "cd Grub-Themes"
+            echo "```"
+            echo ""
+            echo "### Step 2: Run the Installation Script"
+            echo "Use the provided installation script to select and install the theme of your choice."
+            echo ""
+            echo "```bash"
+            echo "sudo ./install.sh"
+            echo "```"
+            echo ""
+            echo "The script will prompt you to select a theme from the list, install it to your Grub directory, and configure Grub automatically."
+            echo ""
+            echo "### Previews"
+            echo "The previews of each theme are listed below. Click on each image to view it in full size."
+            echo ""
+
+            # Add theme previews
+            for file in Preview/*.{png,jpg}; do
+              theme_name=$(basename "$file" | sed 's/\.[^.]*$//')
+              echo "## $theme_name"
+              echo "![${theme_name}](./$file)"
+              echo ""
+            done
+          } > README.md
+
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "Auto-update README with theme previews"
-          git push
+          git push https://$GH_TOKEN@github.com/0xRad1ant/Grub-Themes.git HEAD:main
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
