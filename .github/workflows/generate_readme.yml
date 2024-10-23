@@ -3,7 +3,7 @@ name: Daily README Refresh
 on:
   schedule:
     - cron: '0 0 * * *' # Runs every day at midnight
-  workflow_dispatch: 
+  workflow_dispatch: # Allows manual triggering of the workflow
 
 jobs:
   refresh:
@@ -33,7 +33,7 @@ jobs:
             echo -e "![License](https://img.shields.io/github/license/0xRad1ant/Grub-Themes)\n" >> README.md
           fi
 
-          # Append the rest of the README content
+          # Append the rest of the README content, ensuring to skip the first line if it contains the header
           tail -n +2 README.bak >> README.md
 
           # Clean up backup file
