@@ -6,23 +6,6 @@
 ![License](https://img.shields.io/github/license/0xRad1ant/Grub-Themes)
 
 
-![Stars](https://img.shields.io/github/stars/0xRad1ant/Grub-Themes?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/0xRad1ant/Grub-Themes)
-![Issues](https://img.shields.io/github/issues/0xRad1ant/Grub-Themes)
-![License](https://img.shields.io/github/license/0xRad1ant/Grub-Themes)
-
-
-![Stars](https://img.shields.io/github/stars/0xRad1ant/Grub-Themes?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/0xRad1ant/Grub-Themes)
-![Issues](https://img.shields.io/github/issues/0xRad1ant/Grub-Themes)
-![License](https://img.shields.io/github/license/0xRad1ant/Grub-Themes)
-
-
-![Stars](https://img.shields.io/github/stars/0xRad1ant/Grub-Themes?style=social)
-![Last Commit](https://img.shields.io/github/last-commit/0xRad1ant/Grub-Themes)
-![Issues](https://img.shields.io/github/issues/0xRad1ant/Grub-Themes)
-![License](https://img.shields.io/github/license/0xRad1ant/Grub-Themes)
-
 Welcome to the collection of Grub themes with previews of each one. Each theme can be installed and applied automatically via the provided script.
 
 ## Available Themes
